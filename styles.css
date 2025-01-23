@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: black;
-    background-image: url(./Assets/event.jpg);
+    background-image: url(./Assets/abstract-2709402.png);
     color: #d1d1f1;
     overflow-x: hidden;
   }
@@ -73,8 +73,16 @@ body {
   color: white; /* Change icon color to white */
 }
 
+.menu-icon > i:hover {
+  color: #ddddddd3; /* Change color on hover */
+}
+
 . fa fa-bars {
   font-size: 1.9rem; /* Adjust icon size */
+}
+
+.fa fa-bars:hover {
+  color: #ddddddd3; /* Change color on hover */
 }
 
 
@@ -104,7 +112,7 @@ body {
   }
   
   .subtitle {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 1.5rem;
     color: #ffffff;
   }
@@ -236,11 +244,11 @@ body {
   .stat-item h3 {
     font-size: 5rem; /* Increase font size */
     margin: 0;
-    color: #3e13ff;
+    color: #1b2744;
   }
   
   .stat-item p {
     margin: 5px 0 0;
     font-size: 1.3rem; /* Increase font size */
-    color: #3e13ff;
+    color: #1b2744;
   }

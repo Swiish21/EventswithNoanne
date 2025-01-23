@@ -1,12 +1,16 @@
-// Wait for the DOM to fully load
-document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".big-text");
-    elements.forEach((element, index) => {
-      element.style.animation = `slideUp 1s ease-out forwards`;
-      element.style.animationDelay = `${index * 0.2}s`;
-    });
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const elementsToAnimate = document.querySelectorAll('.big-text, .subtitle');
 
+  elementsToAnimate.forEach((element, index) => {
+    element.style.opacity = 0;
+    element.style.transform = 'translateY(50px) scale(0.8)';
+    setTimeout(() => {
+      element.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+      element.style.opacity = 1;
+      element.style.transform = 'translateY(0) scale(1)';
+    }, index * 300); // Stagger the animations
+  });
+});
   
   function animateCount(element, start, end, duration) {
     let startTime = null;

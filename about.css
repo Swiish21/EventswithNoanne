@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-image: url(./Assets/event.jpg);
+    background-image: url(./Assets/abstract-2709402.png);
     color: #fff;
     line-height: 1.6;
   }
@@ -87,6 +87,28 @@
     text-transform: uppercase;
     color: #ffffff;
   }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .section-description {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto 2rem; //
+    color: #e4e4e4;
+    margin-bottom: 5rem;
+  }
+
+  /* .container > p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #e4e4e4;
+  } */
   
   .description {
     font-size: 1.5rem;
@@ -197,8 +219,8 @@
   }
   
   .service_section .owl-stage .owl-item.active.center .box .img-box img {
-    -webkit-filter: brightness(0);
-            filter: brightness(0);
+    background-color: transparent;
+    color: invert;
   }
   
   .service_section .owl-nav {
@@ -227,7 +249,7 @@
   }
   
   .service_section .owl-dots .owl-dot.active {
-    background: #2c7873;
+    background: #3700ff;
   }
   
   
