@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const eventType = card.querySelector('p').textContent;
         modalTitle.textContent = eventType;
         modalDescription.textContent = `Details about ${eventType} will be displayed here.`;
+        
+        // Add the slide-up animation class to the description
+        modalDescription.classList.add('modal-description');
+        
         modal.style.display = 'block';
       });
     });
@@ -31,4 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const elementsToAnimate = document.querySelectorAll('.big-text, .subtitle, h2');
   
+    elementsToAnimate.forEach((element, index) => {
+      element.style.opacity = 0;
+      element.style.transform = 'translateY(50px) scale(0.8)';
+      setTimeout(() => {
+        element.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+        element.style.opacity = 1;
+        element.style.transform = 'translateY(0) scale(1)';
+      }, index * 300); // Stagger the animations
+    });
+  });
