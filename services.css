@@ -1,0 +1,238 @@
+body {
+    background-image: url(./Assets/abstract-2709402.png);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    /* background-image: url(./Assets/abstract-2709402.png); */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .about-landing{
+    color: white;
+    text-align: center;
+    
+  }
+
+  h2{
+    margin-top: 1px;
+    margin-left: 100px;
+    width: 90%;
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+  
+  main {
+    text-align: center;
+    margin: 5rem 2rem;
+  }
+  
+  .big-text-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Adjust spacing between words */
+  }
+  
+  .big-text {
+    font-size: 5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  
+  .big-text.outline {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  }
+  
+  main {
+    padding: 10px;
+  }
+  
+  .event-types .types-grid {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 10px;
+  }
+
+  .event-types {
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+  }
+
+  .event-types h2{
+    color: #f4f4f4;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .type-card {
+    background: transparent;
+    padding: 1px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .type-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .type-card p {
+    color: white;
+    margin-top: 10px;
+    font-size: 1.08rem;
+  }
+  
+  .type-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 15px rgba(38, 0, 255, 0.3);
+  }
+  
+  /* Modal Styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .modal-content {
+    background-color: transparent;
+    margin: 15% auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .nav-icon {
+    font-size: 1.3rem;
+    padding: 1px;
+    color: white;
+    margin-left: 1755px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+  }
+
+  .nav-icon > a {
+    cursor: pointer;
+    color: white;
+  }
+
+  .nav-icon  a:hover {
+    transform: scale(10.1);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    color: white;
+
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+  .services-section {
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 100px;
+    /* padding: 50px 20px; */
+  }
+  
+  .services-section h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .service-card {
+    background-color: white;
+    padding: 20px; /* Adjusted from 30px to 20px */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card > img {
+    font-size: 10px; /* Adjusted from 50px to 40px */
+    color: #003874; /* Blue color for icons */
+    margin-bottom: 8px; /* Adjusted for smaller spacing */
+  }
+  
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .service-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-types .types-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-types .types-grid {
+      grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+  }
+  
+  footer {
+    margin-top: 100px;
+    text-align: center;
+    background: #0a0e1a;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
