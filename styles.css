@@ -219,16 +219,6 @@ body {
     font-size: 2.5rem;
     color: #4a57ff;
   }
-  
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #0a0e1a;
-    font-size: 0.9rem;
-    color: #ffffff80;
-  }
-
 
   /* Additional Styles */
 
@@ -267,4 +257,65 @@ body {
     margin: 5px 0 0;
     font-size: 1.3rem; /* Increase font size */
     color: #1b2744;
+  }
+
+  .footer {
+    background-color: #000627;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-left h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .social-icons a:hover {
+    color: #ddd;
   }
