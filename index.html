@@ -55,6 +55,28 @@
       </div>
     </div>
   </section>
+    <section class="video-section">
+
+      <div class="button-container">
+          <div class="play-button" onclick="openVideo()">
+              <span class="play-icon">▶</span>
+          </div>
+          <!-- <div class="circular-text">
+            <div id="circle-text"></div>
+            <div id="words" style="font-size: 24px; text-align: center; margin-top: 100px;">PLAY VIDEO</div>
+          </div> -->
+      </div>
+  
+      <div class="video-container" id="videoModal">
+          <span class="close-btn" onclick="closeVideo()">✖</span>
+          <video id="videoPlayer" controls>
+              <source src="video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+
+    </section>
+
   <section>
     <p class="description">At Events with Noanne, we bring your vision to life with precision and creativity.<br>Whether you're hosting a corporate gathering, a tech event, or a private celebration, our expertise ensures your event is nothing short of extraordinary. <br>What are you waiting for? Plan with us today and let us turn your vision into reality.</p>
     <div class="cta-buttons">
