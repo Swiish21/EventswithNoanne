@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stay in Touch</title>
-  <link rel="stylesheet" href="spiritTech.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -27,37 +27,30 @@
       </header>
   <div class="container">
     <div class="container">
-        <h1 class="big-text">Spirit Tech</h1>
-        <h1 class="big-text outline">Program</h1>
-        <p class="subtitle">Spirit Tech is EWN’s flagship initiative focused on delivering value-driven tech learning experiences for children and teens. This program is designed to inspire and prepare the next generation for a tech-enabled future.
-        </p>
-    </div>
-    <h2></h2>
-    <p></p>
-    <div>
-        <h2 class="program-overview">Program Overview</h2>
-        <p class="program-description">Spirit Tech for Events with Noanne (EWN) merges technology with emotion to create immersive, secure, and transformative event experiences. With cybersecurity for safety, programming for AI-driven personalization, and design thinking for meaningful engagement, EWN crafts events that leave a lasting spiritual and emotional impact.</p>
+        <h1 class="big-text">Get in</h1>
+        <h1 class="big-text outline">Touch</h1>
+        <p class="subtitle">Let us bring your vision to life with our expertise in event management.</p>
     </div>
     <main>
       <section class="contact-section">
         <h2>Contact Us</h2>
-        <form id="contact-form">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Name*" required>
-            <input type="email" name="email" placeholder="Email Address*" required>
-          </div>
-          <textarea name="message" rows="5" placeholder="Message*" required></textarea>
-          <div class="checkbox-group">
-            <p>What are you looking for?</p>
-            <label><input type="checkbox" name="web-design"> Event Planning</label>
-            <label><input type="checkbox" name="development"> Event Management</label>
-            <label><input type="checkbox" name="ux-design"> Vendor Management</label>
-            <label><input type="checkbox" name="branding"> Staff Management</label>
-            <label><input type="checkbox" name="graphic-design"> Event Media Coverage</label>
-            <label><input type="checkbox" name="marketing"> Sponsor Management</label>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
+        <form id="contact-form" action="https://formspree.io/f/xqaelbna" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Name*" required>
+              <input type="email" name="email" placeholder="Email Address*" required>
+            </div>
+            <textarea name="message" rows="5" placeholder="Message*" required></textarea>
+            <div class="checkbox-group">
+              <p>What are you looking for?</p>
+              <label><input type="checkbox" name="event-planning"> Event Planning</label>
+              <label><input type="checkbox" name="event-management"> Event Management</label>
+              <label><input type="checkbox" name="vendor-management"> Vendor Management</label>
+              <label><input type="checkbox" name="staff-management"> Staff Management</label>
+              <label><input type="checkbox" name="media-coverage"> Event Media Coverage</label>
+              <label><input type="checkbox" name="sponsor-management"> Sponsor Management</label>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
       </section>
     </main>
   </div>
