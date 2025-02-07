@@ -36,30 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const text = ""; // Text to rotate
-  //   const circleText = document.getElementById("circle-text");
-  //   const radius = 70; // Radius for the text circle
-  //   const letters = text.replace(/[^a-zA-Z0-9]/g, ''); // Remove non-letter characters
-  //   const totalLetters = letters.length;
-  
-  //   // Clear existing content
-  //   circleText.innerHTML = "";
-  
-  //   // Distribute letters evenly around the circle
-  //   letters.split("").forEach((letter, index) => {
-  //     const angle = (360 / totalLetters) * index; // Equal spacing between letters
-  //     const x = radius * Math.cos((angle * Math.PI) / 180); // X position
-  //     const y = radius * Math.sin((angle * Math.PI) / 180); // Y position
-  
-  //     // Create and style each letter
-  //     const span = document.createElement("span");
-  //     span.textContent = letter;
-  //     span.style.position = "absolute";
-  //     span.style.transform = `translate(${x}px, ${y}px) rotate(${angle}deg)`; // Rotate the letter
-  //     circleText.appendChild(span);
-  //   });
-  // });
+
+  let slideIndex = 0;
+showSlides();
+
+function moveSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides() {
+  let slides = document.getElementsByClassName("testimonial-item");
+  if (slideIndex >= slides.length) { slideIndex = 0; }
+  if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
+  for (let slide of slides) {
+    slide.style.display = "none";
+  }
+
+  slides[slideIndex].style.display = "block";
+}
+
+
 
 
 // Open video modal
