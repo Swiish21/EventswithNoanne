@@ -298,4 +298,19 @@ body {
   .social-icons a:hover {
     color: #ddd;
   }
+  .btn-box a {
+    display: inline-block;
+    background-color: #003874;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn-box a:hover {
+    background-color: darkblue;
+    transition: .2s ease-in-out;
+  }
   
