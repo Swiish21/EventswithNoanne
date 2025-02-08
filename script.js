@@ -35,3 +35,71 @@ document.addEventListener('DOMContentLoaded', () => {
       animateCount(stat, 0, endValue, 2000);
     });
   });
+
+
+  let slideIndex = 0;
+showSlides();
+
+function moveSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides() {
+  let slides = document.getElementsByClassName("testimonial-item");
+  if (slideIndex >= slides.length) { slideIndex = 0; }
+  if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
+  for (let slide of slides) {
+    slide.style.display = "none";
+  }
+
+  slides[slideIndex].style.display = "block";
+}
+
+
+
+
+// Open video modal
+function openVideo() {
+  const videoModal = document.getElementById("videoModal");
+  const videoPlayer = document.getElementById("videoPlayer");
+
+  // Display the modal
+  videoModal.style.display = "block";
+
+  // Play the video
+  videoPlayer.play();
+
+  // Request fullscreen
+  if (videoPlayer.requestFullscreen) {
+      videoPlayer.requestFullscreen();
+  } else if (videoPlayer.webkitRequestFullscreen) {
+      videoPlayer.webkitRequestFullscreen(); // For Safari
+  } else if (videoPlayer.msRequestFullscreen) {
+      videoPlayer.msRequestFullscreen(); // For IE/Edge
+  }
+}
+
+// Close video modal
+function closeVideo() {
+  const video = document.getElementById("videoPlayer");
+
+  // Pause the video and reset the time
+  video.pause();
+  video.currentTime = 0;
+
+  // Exit fullscreen if applicable
+  if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+      if (document.exitFullscreen) {
+          document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen(); // For Safari
+      } else if (document.msExitFullscreen) {
+          document.msExitFullscreen(); // For IE/Edge
+      }
+  }
+
+  // Hide the modal
+  document.getElementById("videoModal").style.display = "none";
+}
+

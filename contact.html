@@ -3,58 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stay in Touch</title>
-  <link rel="stylesheet" href="contact.css">
+  <title>Events with Noanne</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="transparent-nav">
-          <!-- <div class="social-icons">
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-house" style="color: #ffffff;"></i></a>
-          </div> -->
-    
-    
-          <div class="nav-icon">
-              <a href="menu.html" target="_blank"><i class="fa fa-bars"></i></a>
-          </div>
-    
-        </nav>
-      </header>
-  <div class="container">
+  <header class="header">
+    <nav class="transparent-nav">
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-house" style="color: #ffffff;"></i></a>
+      </div>
+
+
+      <div class="nav-icon">
+          <a href="menu.html" target="_blank"><i class="fa fa-bars"></i></a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="landing">
     <div class="container">
-        <h1 class="big-text">Get in</h1>
-        <h1 class="big-text outline">Touch</h1>
-        <p class="subtitle">Let us bring your vision to life with our expertise in event management.</p>
+      <h1 class="big-text">GET IN</h1>
+      <h1 class="big-text outline">TOUCH</h1>
+      <p class="subtitle">Have an event in mind? We’re here to make it happen! Whether it's a corporate gathering, <br>a tech conference, or a private celebration,Events with Noanne (EWN) is ready to bring your vision to life. <br>Let’s create something extraordinary together—reach out today!</p>
     </div>
-    <main>
-      <section class="contact-section">
-        <h2>Contact Us</h2>
-        <form id="contact-form" action="https://formspree.io/f/xqaelbna" method="POST">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Name*" required>
-              <input type="email" name="email" placeholder="Email Address*" required>
-            </div>
-            <textarea name="message" rows="5" placeholder="Message*" required></textarea>
-            <div class="checkbox-group">
-              <p>What are you looking for?</p>
-              <label><input type="checkbox" name="event-planning"> Event Planning</label>
-              <label><input type="checkbox" name="event-management"> Event Management</label>
-              <label><input type="checkbox" name="vendor-management"> Vendor Management</label>
-              <label><input type="checkbox" name="staff-management"> Staff Management</label>
-              <label><input type="checkbox" name="media-coverage"> Event Media Coverage</label>
-              <label><input type="checkbox" name="sponsor-management"> Sponsor Management</label>
-            </div>
-            <button type="submit">Submit</button>
-          </form>
-      </section>
-    </main>
-  </div>
+  </main>
   
+  <section class="statistics">
+    <h2>Contact Us</h2>
+    <section class="contact-section">
+      <form id="contact-form" action="https://formspree.io/f/xqaelbna" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Name*" required>
+            <input type="email" name="email" placeholder="Email Address*" required>
+          </div>
+          <textarea name="message" rows="5" placeholder="Message*" required></textarea>
+          <div class="checkbox-group">
+            <p>What are you looking for?</p>
+            <label><input type="checkbox" name="event-planning"> Event Planning</label>
+            <label><input type="checkbox" name="event-management"> Event Management</label>
+            <label><input type="checkbox" name="vendor-management"> Vendor Management</label>
+            <label><input type="checkbox" name="staff-management"> Staff Management</label>
+            <label><input type="checkbox" name="media-coverage"> Event Media Coverage</label>
+            <label><input type="checkbox" name="sponsor-management"> Sponsor Management</label>
+          </div>
+          <button type="submit">Inquire</button>
+        </form>
+    </section>
+  </section>
+
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-left">
@@ -71,16 +73,15 @@
       </div>
       <div class="footer-right">
         <div class="social-icons">
-          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/eventswithnoanne" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/eventswithnoanne" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://linkedin.com/eventswithnoanne" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/eventswithnoanne" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="contact.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

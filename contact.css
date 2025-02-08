@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(./Assets/abstract-2709402.png);
+    background-color: #800080;
+    background-image: url(./Assets/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product-plain-studio-background.jpg);
     color: #ffffff;
   }
   
@@ -11,15 +12,17 @@ body {
   }
   
   header h1 {
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 8vw;
+    font-weight: 900;
+    line-height: 1.1;
     color: #ffffff;
+    margin: 0;
   }
   
   header h1 span {
     display: block;
     color: #6c6c6c;
-    font-weight: 300;
+    font-weight: 900;
   }
   
   .contact-section {
@@ -94,7 +97,7 @@ body {
   button {
     font-size: 1rem;
     padding: 10px 20px;
-    background-color: #3b82f6;
+    background-color: #3a003a;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -102,7 +105,7 @@ body {
   }
   
   button:hover {
-    background-color: #2563eb;
+    background-color: #530053;
   }
   .nav-icon {
     font-size: 1.3rem;
@@ -126,7 +129,7 @@ body {
 
   }
   .footer {
-    background-color: #000627;
+    background-color: #3a003a;
     color: white;
     padding: 20px 0;
     text-align: center;
