@@ -6,9 +6,9 @@ body {
     background-image: url(./Assets/abstract-2709402.png);
     color: #d1d1f1;
     overflow-x: hidden;
-  }
-  
-  header {
+}
+
+header {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -24,71 +24,83 @@ body {
 }
 
 .transparent-nav {
-  position: relative;
-  top: 0;
-  width: 150%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: none;
-  padding: 10px;
-  z-index: 1000;
+    position: relative;
+    top: 0;
+    width: 150%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    padding: 10px;
+    z-index: 1000;
 }
+
 .nav-icon {
-  padding: 1px;
-  color: white;
-  margin: 10px;
-  margin-left: 170px;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 1000;
-  text-align: center;
-  text-decoration: none;
+    padding: 1px;
+    color: white;
+    margin: 10px;
+    margin-left: 170px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    text-decoration: none;
 }
-.nav-icon > a {
-  cursor: pointer;
-  color: white; /* Change icon color to white */
+
+.nav-icon>a {
+    cursor: pointer;
+    color: white;
+    /* Change icon color to white */
 }
 
 .social-icons {
-  margin-top: 50px; /* Add space on top of the icons */
+    margin-top: 50px;
+    /* Add space on top of the icons */
 }
 
 .social-icons a {
-  margin: 0 15px; /* Add space between the icons */
-  color: white; /* Change icon color to white */
-  font-size: 1.5rem; /* Adjust icon size */
+    margin: 0 15px;
+    /* Add space between the icons */
+    color: white;
+    /* Change icon color to white */
+    font-size: 1.5rem;
+    /* Adjust icon size */
 }
 
 .social-icons a:hover {
-  color: #ddd; /* Change color on hover */
+    color: #ddd;
+    /* Change color on hover */
 }
 
 .menu-icon {
-  margin-right: 170px;
+    margin-right: 170px;
 }
 
-.menu-icon > i {
-  cursor: pointer;
-  color: white; /* Change icon color to white */
+.menu-icon>i {
+    cursor: pointer;
+    color: white;
+    /* Change icon color to white */
 }
 
-.menu-icon > i:hover {
-  color: #ddddddd3; /* Change color on hover */
+.menu-icon>i:hover {
+    color: #ddddddd3;
+    /* Change color on hover */
 }
 
- .fa-bars {
-  font-size: 1.9rem; /* Adjust icon size */
+.fa-bars {
+    font-size: 1.9rem;
+    /* Adjust icon size */
 }
 
 .fa fa-bars:hover {
-  color: #ddddddd3; /* Change color on hover */
+    color: #ddddddd3;
+    /* Change color on hover */
 }
 
 
-  
-  /* Landing Section */
-  .landing .container {
+
+/* Landing Section */
+.landing .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,38 +108,39 @@ body {
     height: 70vh;
     text-align: center;
     padding: 0 20px;
-  }
-  
-  .big-text {
+}
+
+.big-text {
     font-size: 8vw;
     font-weight: 900;
     line-height: 1.1;
     color: #ffffff;
     margin: 0;
-  }
-  
-  .big-text.outline {
+    /* text-align: center; */
+}
+
+.big-text.outline {
     -webkit-text-stroke: 2px #ffffff;
     color: transparent;
-  }
-  
-  .subtitle {
+}
+
+.subtitle {
     margin-top: 40px;
     font-size: 1.5rem;
     color: #ffffff;
-  }
+}
 
-  .description {
+.description {
     margin-top: 50px;
     font-size: 1.3rem;
     color: #ffffff;
     text-align: center;
     /* max-width: 800px; */
     line-height: 1.5;
-  }
-  
-  
-  .cta-buttons {
+}
+
+
+.cta-buttons {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -136,9 +149,9 @@ body {
     height: 20vh;
     text-align: center;
     padding: 0 20px;
-  }
+}
 
-  .cta-buttons a {
+.cta-buttons a {
     color: #0a0e1a;
     text-decoration: none;
     margin: 10px;
@@ -148,13 +161,13 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
+}
 
-  .cta-buttons a:hover {
+.cta-buttons a:hover {
     color: #ddddddd3;
-  }
-  
-  .button {
+}
+
+.button {
     margin: 10px;
     padding: 12px 24px;
     font-size: 1rem;
@@ -162,111 +175,121 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  
-  .button.primary {
+}
+
+.button.primary {
     background-color: #ffffff;
     color: black;
-  }
-  
-  .button.primary:hover {
+}
+
+.button.primary:hover {
     transition: all 0.3s ease;
     background-color: transparent;
     border: 1px solid #ffffff;
     color: white;
-  }
-  
-  .button.secondary {
+}
+
+.button.secondary {
     background-color: transparent;
     color: #ffffff;
     border: 2px solid #ffffff;
-  }
-  
-  .button.secondary:hover {
+}
+
+.button.secondary:hover {
     opacity: .9;
     background-color: white;
     color: rgb(255, 255, 255);
-  }
-  
-  /* Statistics Section */
-  .statistics {
+}
+
+/* Statistics Section */
+.statistics {
     background-color: #ffffff;
     padding: 40px 20px;
     text-align: center;
-  }
-  
-  .statistics h2 {
+}
+
+.statistics h2 {
     margin-bottom: 40px;
     font-size: 3rem;
     color: #ffffff;
-  }
-  
-  .stats-grid {
+}
+
+.stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-  }
-  
-  .stat-item {
+}
+
+.stat-item {
     background-color: #1b2744;
     padding: 20px;
     border-radius: 10px;
     color: #d1d1f1;
-  }
-  
-  .stat-item h3 {
+}
+
+.stat-item h3 {
     margin: 0;
     font-size: 2.5rem;
     color: #4a57ff;
-  }
+}
 
-  /* Additional Styles */
+/* Additional Styles */
 
-  .statistics {
+.statistics {
     text-align: center;
     padding: 50px 0;
-    background: none; /* Remove background */
-  }
-  
-  .stats-grid {
+    background: none;
+    /* Remove background */
+}
+
+.stats-grid {
     display: flex;
-    justify-content: center; /* Center the items */
+    justify-content: center;
+    /* Center the items */
     flex-wrap: wrap;
-    gap: 20px; /* Add gap between items */
-  }
-  
-  .stat-item {
-    width: 250px; /* Set width */
-    height: 250px; /* Set height */
+    gap: 20px;
+    /* Add gap between items */
+}
+
+.stat-item {
+    width: 250px;
+    /* Set width */
+    height: 250px;
+    /* Set height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff; /* Add background color */
-    border-radius: 10px; /* Add border radius */
-    margin: 5px; /* Reduce margin */
-  }
-  
-  .stat-item h3 {
-    font-size: 5rem; /* Increase font size */
+    background-color: #ffffff;
+    /* Add background color */
+    border-radius: 10px;
+    /* Add border radius */
+    margin: 5px;
+    /* Reduce margin */
+}
+
+.stat-item h3 {
+    font-size: 5rem;
+    /* Increase font size */
     margin: 0;
     color: #1b2744;
-  }
-  
-  .stat-item p {
-    margin: 5px 0 0;
-    font-size: 1.3rem; /* Increase font size */
-    color: #1b2744;
-  }
+}
 
-  .footer {
+.stat-item p {
+    margin: 5px 0 0;
+    font-size: 1.3rem;
+    /* Increase font size */
+    color: #1b2744;
+}
+
+.footer {
     background-color: #000627;
     color: white;
     padding: 20px 0;
     text-align: center;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,48 +297,50 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .footer-left, .footer-center, .footer-right {
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
     flex: 1;
     margin: 10px;
-  }
-  
-  .footer-left h3 {
+}
+
+.footer-left h3 {
     margin: 0;
     font-size: 1.5rem;
-  }
-  
-  .footer-center {
+}
+
+.footer-center {
     text-align: center;
-  }
-  
-  .footer-links {
+}
+
+.footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .footer-links li {
+}
+
+.footer-links li {
     display: inline;
     margin: 0 10px;
-  }
-  
-  .footer-links a {
+}
+
+.footer-links a {
     color: white;
     text-decoration: none;
-  }
-  
-  .footer-links a:hover {
+}
+
+.footer-links a:hover {
     text-decoration: underline;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     margin: 0 10px;
     color: white;
     font-size: 1.5rem;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #ddd;
-  }
+}
